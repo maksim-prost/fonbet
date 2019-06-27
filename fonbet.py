@@ -62,7 +62,7 @@ def get_bet_from_fonbet(sports,events,custom_factors, ID):
 			parent_id = list_events[i].get('parentId')
 			curent_event = list_events[parent_id] if parent_id else list_events[i]
 			gamer = curent_event.get('team1'),curent_event.get('team2')
-			kof = ';|'.join(rate) + '|;|'
+			kof = '|;|'.join(rate) + '|;|'
 			# print(id_fon,category,event_name,gamer,kof)
 			list_result.append({'category':category,'event_name':event_name,
 								'id_fon':id_fon,'gamer':gamer,'kof':kof})
